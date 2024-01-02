@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:background="#394360" />
+
+            <ImageView
+                android:id="@+id/logointro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/desc_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="180dp"
+                android:src="@drawable/logointro" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="25dp"
+            android:text="@string/textview_1"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="25dp"
+            android:text="@string/textview_2"
+            android:textColor="#AAAAAA"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/btnnext"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="@string/button_next"
+            android:contentDescription="@string/desc_next"
+            android:padding="25dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_background"
+            android:src="@drawable/arrowright"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

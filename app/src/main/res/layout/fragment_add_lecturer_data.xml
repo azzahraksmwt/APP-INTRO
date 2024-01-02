@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.lecturerdata.AddLecturerDataFragment"
+    android:id="@+id/fragment_add_lecturer_data">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_view2dashboard">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#394360"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_AddLecturer"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="-33dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lecturer_id"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="@string/desc_id"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="10dp"
+                android:inputType="text"
+                android:autofillHints="id"
+                android:background="@drawable/custom_view3dashboard"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lecturer_name"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="@string/desc_name"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="10dp"
+                android:inputType="text"
+                android:autofillHints="name"
+                android:background="@drawable/custom_view3dashboard"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="@string/desc_username"
+                android:textSize="13sp"
+
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="10dp"
+                android:inputType="text"
+                android:autofillHints="username"
+                android:background="@drawable/custom_view3dashboard"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password_hint"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="@string/desc_password"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="10dp"
+                android:inputType="textVisiblePassword"
+                android:autofillHints="password"
+                android:background="@drawable/custom_view3dashboard"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_Add"
+                android:layout_marginStart="270dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

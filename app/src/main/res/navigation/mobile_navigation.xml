@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.androidstudio.app_intro.ui.home.HomeFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_lecturerdata"
+        android:name="com.androidstudio.app_intro.ui.lecturerdata.LecturerdataFragment"
+        android:label="@string/lecturer_data"
+        tools:layout="@layout/fragment_lecturerdata" />
+
+    <fragment
+        android:id="@+id/nav_inventory"
+        android:name="com.androidstudio.app_intro.ui.inventory.InventoryFragment"
+        android:label="@string/inventory"
+        tools:layout="@layout/fragment_inventory" />
+
+    <fragment
+        android:id="@+id/nav_studentdata"
+        android:name="com.androidstudio.app_intro.ui.studentdata.StudentdataFragment"
+        android:label="@string/student_data"
+        tools:layout="@layout/fragment_studentdata" />
+
+    <fragment
+        android:id="@+id/nav_usageform"
+        android:name="com.androidstudio.app_intro.ui.usageform.UsageformFragment"
+        android:label="@string/menu_formpemakaian"
+        tools:layout="@layout/fragment_usageform" />
+
+    <fragment
+        android:id="@+id/nav_usagevalidation"
+        android:name="com.androidstudio.app_intro.ui.usagevalidation.UsagevalidationFragment"
+        android:label="@string/menu_validasipemakaian"
+        tools:layout="@layout/fragment_usagevalidation" />
+
+    <fragment
+        android:id="@+id/nav_usagehistory"
+        android:name="com.androidstudio.app_intro.ui.usagehistory.UsagehistoryFragment"
+        android:label="@string/menu_validasipemakaian"
+        tools:layout="@layout/fragment_usagehistory" />
+
+    <fragment
+        android:id="@+id/nav_materialreport"
+        android:name="com.androidstudio.app_intro.ui.materialreport.MaterialreportFragment"
+        android:label="@string/menu_laporanmaterial"
+        tools:layout="@layout/fragment_materialreport" />
+
+    <fragment
+        android:id="@+id/nav_toolreport"
+        android:name="com.androidstudio.app_intro.ui.toolreport.ToolreportFragment"
+        android:label="@string/menu_laporantool"
+        tools:layout="@layout/fragment_toolreport" />
+
+    <fragment
+        android:id="@+id/fragment_add_lecturer_data"
+        android:name="com.androidstudio.app_intro.ui.lecturerdata.AddLecturerDataFragment"
+        android:label="@string/lecturer_data"
+        tools:layout="@layout/fragment_add_lecturer_data" />
+</navigation>

@@ -1,0 +1,143 @@
+<resources>
+    <!--    <string name="app_name">APP-INTRO</string>-->
+
+    <!--    Common-->
+    <string name="btnBack">Back</string>
+    <string name="desc_password">Enter Password</string>
+    <string name="desc_username">Enter Username</string>
+    <string name="btn_Reset">Reset</string>
+    <string name="btn_Add">Add</string>
+    <string name="btn_save">Save</string>
+    <string name="btnAdd">+ Add</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="action">Action</string>
+    <string name="item_id">Item ID</string>
+    <string name="UoM">UoM</string>
+    <string name="desc_uom">Enter UoM</string>
+    <string name="stock">Stock</string>
+    <string name="desc_type">Enter Type</string>
+    <string name="desc_stock">Enter Stock</string>
+
+    <!--Main Activity-->
+    <string name="app_name">INTRO</string>
+    <string name="button_next">Next</string>
+    <string name="desc_next">Lanjut ke halaman berikutnya</string>
+    <string name="desc_logo">INTRO</string>
+    <string name="textview_1">Welcome to Inventory TRO</string>
+    <string name="textview_2">Make inventory effective and efficient</string>
+
+    <!--Login Activity-->
+    <string name="button_back">Back</string>
+    <string name="desc_back">Kembali ke halaman sebelumnya</string>
+    <string name="login_text">Login</string>
+    <string name="login_text2">
+        <font color="#A8AAAAAA">Enter your Username and password to access panel. </font>
+    </string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="button_submit">Submit</string>
+    <string name="desc_submit">Lanjut ke halaman selanjutnya</string>
+
+    <!--    Dashboard-->
+    <string name="profile">Profile</string>
+    <string name="notification">Notification</string>
+    <string name="profile_submenu">Edit Profile</string>
+    <string name="logout">Logout</string>
+    <string name="search">Search For Items</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="desc_titledashboard">Hello Admin! What do you want to see today?</string>
+    <string name="nama_user">Admin</string>
+    <string name="image">Image</string>
+    <string name="text_image">Besi S45C 35 x 55 x 1000 mm</string>
+    <string name="more_detail">More Detail</string>
+    <string name="see_more">See More...</string>
+
+    <!--    Edit Profile-->
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="old_pw">Old Password</string>
+    <string name="new_pw">New Password</string>
+    <string name="desc_id">Enter ID</string>
+    <string name="desc_name">Enter Name</string>
+    <string name="desc_old_pw">Enter Old Password</string>
+    <string name="desc_new_pw">Enter New Password</string>
+    <string name="btnSave">Save Changes</string>
+
+    <!--    Item-->
+    <string name="title_item">Item Detail</string>
+    <string name="name_of_item">Name Of Item</string>
+    <string name="type_of_item">Type Of Item</string>
+
+    <!--    Lecturer Data-->
+    <string name="lecturer_data">Lecturer Data</string>
+    <string name="id_lecturer">Lecturer ID</string>
+    <string name="name_lecturer">Lecturer Name</string>
+    <string name="title_AddLecturer">Add Lecturer Data</string>
+    <string name="title_EditLecturer">Edit Lecturer Data</string>
+    <string name="lecturer_id">Lecturer ID</string>
+    <string name="lecturer_name">Lecturer Name</string>
+    <string name="btn_add_stock">Add Stock</string>
+
+    <!--    Student Data-->
+    <string name="student_data">Student Data</string>
+    <string name="nim">NIM</string>
+    <string name="descnim">123456</string>
+    <string name="full_name">Full Name</string>
+    <string name="descfull_name">Azzahra Kusmawati</string>
+    <string name="generation">Generation</string>
+    <string name="descgeneration">2021</string>
+    <string name="_class">Class</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="descphone_number">08123456789</string>
+    <string name="title_AddStudent">Add Student Data</string>
+    <string name="title_EditStudent">Edit Student Data</string>
+    <string name="desc_nim">Enter NIM</string>
+    <string name="desc_full_name">Enter Full Name</string>
+    <string name="desc_generation">Enter Generation</string>
+    <string name="desc_class">Enter Class</string>
+    <string name="desc_phone_number">Enter Phone Number</string>
+
+    <!--    Inventory-->
+    <string name="inventory">Inventory</string>
+    <string name="name_goods">Name Of Goods</string>
+    <string name="type_goods">Type Of Goods</string>
+    <string name="date">Modified By Date</string>
+    <string name="title_AddInventory">Add Inventory</string>
+    <string name="title_EditInventory">Edit Inventory</string>
+
+    <!--Toolbar-->
+    <string name="button_logo">Logo</string>
+    <string name="desc_Logo">Lanjut menampilkan menu</string>
+    <string name="button_dashboard">Dashboard</string>
+    <string name="desc_dashboard">Lanjut menampilkan dashboard</string>
+    <string name="button_masterdata">Master Data</string>
+    <string name="desc_masterdata">Lanjut menampilkan masterdata</string>
+    <string name="button_pemakaian">Pemakaian</string>
+    <string name="desc_pemakaian">Lanjut menampilkan pemakaian</string>
+    <string name="button_pengembalian">Pengembalian</string>
+    <string name="desc_pengembalian">Lanjut menampilkan pengembalian</string>
+    <string name="button_laporan">Laporan</string>
+    <string name="desc_laporan">Lanjut menampilkan laporan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_masterdata">Master Data</string>
+    <string name="menu_pemakaian">Use Of Goods</string>
+    <string name="menu_laporan">Goods Report</string>
+    <string name="menu_formpemakaian">Goods Usage Form</string>
+    <string name="menu_validasipemakaian">Validation Of Goods Usage</string>
+    <string name="menu_historypemakaian">Item Usage History</string>
+    <string name="menu_laporanmaterial">Material</string>
+    <string name="menu_laporantool">Tool</string>
+</resources>

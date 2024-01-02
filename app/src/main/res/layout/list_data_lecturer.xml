@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow android:background="#BFFFFFFF">
+
+            <TextView
+                android:id="@+id/v_iddosen2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="10sp"
+                android:paddingVertical="5sp"
+                android:hint="@string/id_lecturer"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/v_namadosen2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="10sp"
+                android:paddingVertical="5sp"
+                android:hint="@string/name_lecturer"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/v_username2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="10sp"
+                android:paddingVertical="5sp"
+                android:hint="@string/username"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/v_password2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="8sp"
+                android:paddingVertical="5sp"
+                android:hint="@string/password"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:drawablePadding="2dp"
+                android:paddingHorizontal="8sp"
+                android:paddingVertical="5sp"
+                android:drawableStart="@drawable/edit"
+                android:drawableEnd="@drawable/delete"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+        </TableRow>
+    </TableLayout>
+</com.google.android.material.card.MaterialCardView>
