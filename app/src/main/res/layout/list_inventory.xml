@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <TableRow android:background="#BFFFFFFF">
+
+            <TextView
+                android:id="@+id/idinventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="10sp"
+                android:paddingVertical="5sp"
+                android:text="@string/id_inventory"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/namainventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="10sp"
+                android:paddingVertical="5sp"
+                android:text="@string/name_inventory"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/uominventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="10sp"
+                android:paddingVertical="5sp"
+                android:text="@string/uom_inventory"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/typeinventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="8sp"
+                android:paddingVertical="5sp"
+                android:text="@string/type_inventory"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/qtyinventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="8sp"
+                android:paddingVertical="5sp"
+                android:text="@string/qty_inventory"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/satuaninventory"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="2"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:paddingHorizontal="8sp"-->
+<!--                android:paddingVertical="5sp"-->
+<!--                android:hint="@string/satuan_inventory"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textAlignment="center"/>-->
+
+            <TextView
+                android:id="@+id/dateinventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="8sp"
+                android:paddingVertical="5sp"
+                android:text="@string/date_inventory"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/lecturerinventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="8sp"
+                android:paddingVertical="5sp"
+                android:text="@string/lecturer"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+
+            <ImageButton
+                android:id="@+id/editinventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:drawablePadding="2dp"
+                android:paddingHorizontal="8sp"
+                android:paddingVertical="5sp"
+                android:drawable="@drawable/edit"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+
+            <ImageButton
+                android:id="@+id/deleteinventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:drawablePadding="2dp"
+                android:paddingHorizontal="8sp"
+                android:paddingVertical="5sp"
+                android:drawable="@drawable/delete"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -70,6 +70,7 @@
     <string name="type_of_item">Type Of Item</string>
 
     <!--    Lecturer Data-->
+    <string name="lecturer">Lecturer</string>
     <string name="lecturer_data">Lecturer Data</string>
     <string name="id_lecturer">Lecturer ID</string>
     <string name="name_lecturer">Lecturer Name</string>
@@ -100,6 +101,13 @@
 
     <!--    Inventory-->
     <string name="inventory">Inventory</string>
+    <string name="id_inventory">ID</string>
+    <string name="name_inventory">Name</string>
+    <string name="uom_inventory">Unit Of Measure</string>
+    <string name="type_inventory">Type</string>
+    <string name="qty_inventory">Quantity</string>
+    <string name="satuan_inventory">Satuan</string>
+    <string name="date_inventory">Last Modified Date</string>
     <string name="name_goods">Name Of Goods</string>
     <string name="type_goods">Type Of Goods</string>
     <string name="date">Modified By Date</string>
