@@ -46,7 +46,7 @@
     <string name="logout">Logout</string>
     <string name="search">Search For Items</string>
     <string name="dashboard">Dashboard</string>
-    <string name="desc_titledashboard">Hello Admin! What do you want to see today?</string>
+    <string name="desc_titledashboard">Hello! What do you want to see today?</string>
     <string name="nama_user">Admin</string>
     <string name="image">Image</string>
     <string name="text_image">Besi S45C 35 x 55 x 1000 mm</string>

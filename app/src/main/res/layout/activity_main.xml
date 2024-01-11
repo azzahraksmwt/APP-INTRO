@@ -43,7 +43,7 @@
             android:gravity="center_horizontal"
             android:paddingHorizontal="25dp"
             android:text="@string/textview_1"
-            android:textSize="40sp" />
+            android:textSize="35sp" />
 
         <TextView
             android:id="@+id/tv2"
@@ -54,16 +54,16 @@
             android:paddingHorizontal="25dp"
             android:text="@string/textview_2"
             android:textColor="#AAAAAA"
-            android:textSize="25sp" />
+            android:textSize="15sp" />
 
         <ImageButton
             android:id="@+id/btnnext"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:text="@string/button_next"
             android:contentDescription="@string/desc_next"
             android:padding="25dp"
-            android:layout_marginStart="300dp"
+            android:layout_marginStart="280dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/custom_background"
             android:src="@drawable/arrowright"

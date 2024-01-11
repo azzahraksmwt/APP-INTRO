@@ -1,13 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.usageform.UsageformFragment">
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good Usage Form"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please fill in the form below!" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:background="@drawable/custom_view2dashboard"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="15dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name of Goods"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerNamabarang"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Select Name"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="10dp"
+                android:background="@drawable/custom_view3dashboard"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qty Available"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"/>
+
+            <TextView
+                android:id="@+id/qtyavailable"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Enter Qty Available"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="10dp"
+                android:inputType="none"
+                android:gravity="center_vertical"
+                android:background="@drawable/custom_view3dashboard"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qty Borrow"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"/>
+
+            <EditText
+                android:id="@+id/qtyborrow"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Enter Qty Borrow"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="10dp"
+                android:inputType="none"
+                android:background="@drawable/custom_view3dashboard"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/datePickerInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Date"
+                android:layout_marginTop="10dp"
+                app:boxBackgroundMode="outline">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/datePickerEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textSize="13sp"
+                    android:drawableRight="@drawable/baseline_calendar_month_24"
+                    android:drawablePadding="8dp"
+                    android:autofillHints="date"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_marginStart="210dp"/>
+        </LinearLayout>
+    </LinearLayout>
 </FrameLayout>

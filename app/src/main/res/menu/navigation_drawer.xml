@@ -13,10 +13,10 @@
         android:title="@string/logout"
         app:showAsAction="never" />
 
-    <item
-        android:id="@+id/notification"
-        android:orderInCategory="100"
-        android:title="@string/notification"
-        android:icon="@drawable/baseline_notifications_active_24"
-        app:showAsAction="always" />
+<!--    <item-->
+<!--        android:id="@+id/notification"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="@string/notification"-->
+<!--        android:icon="@drawable/baseline_notifications_active_24"-->
+<!--        app:showAsAction="always" />-->
 </menu>

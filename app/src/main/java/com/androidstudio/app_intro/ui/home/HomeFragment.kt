@@ -4,48 +4,67 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ListView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.RecyclerView
+import com.androidstudio.app_intro.R
+import com.androidstudio.app_intro.api.ApiService
+import com.androidstudio.app_intro.api.ApiUtils
+import com.androidstudio.app_intro.api.SecureStorage
 import com.androidstudio.app_intro.databinding.FragmentHomeBinding
-import com.androidstudio.app_intro.listgoods.AdapterGoods
-import com.androidstudio.app_intro.listgoods.GoodsData
+import com.androidstudio.app_intro.modeldata.InventoryItem
+import com.androidstudio.app_intro.modeldata.InventoryResponse
+import com.androidstudio.app_intro.modeldata.ListGoodsAdapter
+import com.androidstudio.app_intro.network.RetrofitClient
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class HomeFragment : Fragment() {
 
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var dataList: ArrayList<GoodsData>
-    lateinit var imageList: Array<Int>
-    lateinit var itemList: Array<String>
-
-    private fun getData(){
-        for (i in imageList.indices){
-            val GoodsData = GoodsData(imageList[i], itemList[i])
-            dataList.add((GoodsData))
-        }
-        recyclerView.adapter = AdapterGoods(dataList)
-    }
-
     private var _binding: FragmentHomeBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
+    private lateinit var listGoodsAdapter: ListGoodsAdapter
+    private lateinit var secureStorage: SecureStorage
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
-//        val homeViewModel =
-//            ViewModelProvider(this)[HomeViewModel::class.java]
-
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
-//        val textView: TextView = binding.textHome
-//        homeViewModel.text.observe(viewLifecycleOwner) {
-//            textView.text = it
-//        }
+        secureStorage = SecureStorage(requireContext())
+        val userData = secureStorage.getUserData()
+        binding.nama.text = userData?.namaPengguna ?: "Nama Pengguna Tidak Tersedia"
+
+        setupListView()
+        fetchInventoryItems()
+
         return binding.root
+    }
+
+    private fun setupListView() {
+        listGoodsAdapter = ListGoodsAdapter(requireContext(), mutableListOf())
+        binding.listgoodsData.adapter = listGoodsAdapter
+    }
+
+
+    private fun fetchInventoryItems() {
+        ApiUtils.getApiService().getInventoryItems().enqueue(object : Callback<InventoryResponse> {
+            override fun onResponse(call: Call<InventoryResponse>, response: Response<InventoryResponse>) {
+                if (response.isSuccessful) {
+                    response.body()?.data?.inventoryItems?.let { items ->
+                        listGoodsAdapter.clear()
+                        listGoodsAdapter.addAll(items)
+                        listGoodsAdapter.notifyDataSetChanged()
+                    }
+                }
+            }
+
+
+            override fun onFailure(call: Call<InventoryResponse>, t: Throwable) {
+                // Handle failure
+            }
+        })
     }
 
     override fun onDestroyView() {

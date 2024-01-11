@@ -13,12 +13,12 @@
             android:title="@string/menu_masterdata">
 
             <menu>
-                <item android:id="@+id/nav_lecturerdata"
-                    android:title="@string/lecturer_data"
-                    android:icon="@drawable/baseline_group_24" />
-                <item android:id="@+id/nav_studentdata"
-                    android:title="@string/student_data"
-                    android:icon="@drawable/baseline_groups_2_24" />
+<!--                <item android:id="@+id/nav_lecturerdata"-->
+<!--                    android:title="@string/lecturer_data"-->
+<!--                    android:icon="@drawable/baseline_group_24" />-->
+<!--                <item android:id="@+id/nav_studentdata"-->
+<!--                    android:title="@string/student_data"-->
+<!--                    android:icon="@drawable/baseline_groups_2_24" />-->
                 <item android:id="@+id/nav_inventory"
                     android:title="@string/inventory"
                     android:icon="@drawable/baseline_scatter_plot_24"
@@ -42,18 +42,18 @@
                     />
             </menu>
         </item>
-        <item
-            android:id="@+id/nav_laporan"
-            android:title="@string/menu_laporan">
+<!--        <item-->
+<!--            android:id="@+id/nav_laporan"-->
+<!--            android:title="@string/menu_laporan">-->
 
-            <menu>
-                <item android:id="@+id/nav_materialreport"
-                    android:title="@string/menu_laporanmaterial"
-                    android:icon="@drawable/baseline_bar_chart_24" />
-                <item android:id="@+id/nav_toolreport"
-                    android:title="@string/menu_laporantool"
-                    android:icon="@drawable/baseline_stacked_bar_chart_24" />
-            </menu>
-        </item>
+<!--            <menu>-->
+<!--                <item android:id="@+id/nav_materialreport"-->
+<!--                    android:title="@string/menu_laporanmaterial"-->
+<!--                    android:icon="@drawable/baseline_bar_chart_24" />-->
+<!--                <item android:id="@+id/nav_toolreport"-->
+<!--                    android:title="@string/menu_laporantool"-->
+<!--                    android:icon="@drawable/baseline_stacked_bar_chart_24" />-->
+<!--            </menu>-->
+<!--        </item>-->
     </group>
 </menu>
